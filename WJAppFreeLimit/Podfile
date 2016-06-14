@@ -1,0 +1,7 @@
+platform:ios,'7.0'
+target 'WJAppFreeLimit' do
+ pod 'AFNetworking','~> 2.5.4'
+ pod 'Masonry'
+ pod 'MJRefresh'
+ pod 'YYModel','~> 0.9.12'  
+end

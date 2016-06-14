@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>LimitFreeViewController</string>
+		<key>imageName</key>
+		<string>tabbar_limitfree</string>
+		<key>title</key>
+		<string>限免</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ReductionViewController</string>
+		<key>imageName</key>
+		<string>tabbar_reduceprice</string>
+		<key>title</key>
+		<string>降价</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>FreeViewController</string>
+		<key>imageName</key>
+		<string>tabbar_appfree</string>
+		<key>title</key>
+		<string>免费</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SubjectViewController</string>
+		<key>imageName</key>
+		<string>tabbar_subject</string>
+		<key>title</key>
+		<string>专题</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>HotListViewController</string>
+		<key>imageName</key>
+		<string>tabbar_rank</string>
+		<key>title</key>
+		<string>热榜</string>
+	</dict>
+</array>
+</plist>

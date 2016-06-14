@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="SubjectCell">
+            <rect key="frame" x="0.0" y="2" width="401" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topic_Cell_Bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="yWy-CO-0Do">
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="249"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盛夏的果实" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-ou-84J">
+                        <rect key="frame" x="8" y="8" width="385" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Hrz-1x-Akh" userLabel="标题高度"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kxh-eb-cbu" userLabel="大图">
+                        <rect key="frame" x="8" y="37" width="143" height="142"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPT-iv-t2H">
+                        <rect key="frame" x="159" y="37" width="234" height="142"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-9f-Gbj" userLabel="头像描述图">
+                        <rect key="frame" x="8" y="187" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3Gh-9f-Gbj" secondAttribute="height" multiplier="1:1" id="3QB-yw-C0s" userLabel="宽高等比例"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="全是废话" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KI0-fL-fie">
+                        <rect key="frame" x="70" y="187" width="323" height="54"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yWy-CO-0Do" secondAttribute="bottom" id="37W-go-2Qy"/>
+                    <constraint firstAttribute="trailing" secondItem="UPT-iv-t2H" secondAttribute="trailing" constant="8" id="3Sp-7F-jZL" userLabel="视图右间距"/>
+                    <constraint firstAttribute="trailing" secondItem="KI0-fL-fie" secondAttribute="trailing" constant="8" id="4UV-CI-elh" userLabel="文字的右间距"/>
+                    <constraint firstAttribute="bottom" secondItem="3Gh-9f-Gbj" secondAttribute="bottom" constant="8" id="DUL-YP-E8k" userLabel="头像的下间距"/>
+                    <constraint firstItem="3Gh-9f-Gbj" firstAttribute="top" secondItem="Kxh-eb-cbu" secondAttribute="bottom" constant="8" id="EYO-um-Pbc" userLabel="头像和图片的间距"/>
+                    <constraint firstAttribute="trailing" secondItem="yWy-CO-0Do" secondAttribute="trailing" id="G4S-n9-R24"/>
+                    <constraint firstItem="Kxh-eb-cbu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HF2-eM-AcL" userLabel="图片左间距"/>
+                    <constraint firstItem="Kxh-eb-cbu" firstAttribute="top" secondItem="GN2-ou-84J" secondAttribute="bottom" constant="8" id="Hy3-OH-DuG" userLabel="图片和标题间距"/>
+                    <constraint firstItem="GN2-ou-84J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ka9-3J-3uI" userLabel="标题的上间距"/>
+                    <constraint firstItem="yWy-CO-0Do" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MP4-CK-DQF"/>
+                    <constraint firstAttribute="trailing" secondItem="GN2-ou-84J" secondAttribute="trailing" constant="8" id="NmR-4u-Fde" userLabel="标题右间距"/>
+                    <constraint firstItem="Kxh-eb-cbu" firstAttribute="top" secondItem="UPT-iv-t2H" secondAttribute="top" id="OnJ-yb-E9w" userLabel="图片和视图上对齐"/>
+                    <constraint firstItem="Kxh-eb-cbu" firstAttribute="bottom" secondItem="UPT-iv-t2H" secondAttribute="bottom" id="S0x-W0-mml" userLabel="图片和视图下对齐"/>
+                    <constraint firstAttribute="trailing" secondItem="Kxh-eb-cbu" secondAttribute="trailing" constant="250" id="Xgg-gE-ETR" userLabel="图片和cell右间距"/>
+                    <constraint firstItem="3Gh-9f-Gbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="dkJ-bU-uH5" userLabel="头像的左间距"/>
+                    <constraint firstItem="KI0-fL-fie" firstAttribute="top" secondItem="UPT-iv-t2H" secondAttribute="bottom" constant="8" id="e9z-EY-bcr" userLabel="文字和图片的上间距"/>
+                    <constraint firstItem="GN2-ou-84J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hqG-ii-1ag" userLabel="标题左间距"/>
+                    <constraint firstItem="UPT-iv-t2H" firstAttribute="leading" secondItem="Kxh-eb-cbu" secondAttribute="trailing" constant="8" id="hxF-Kx-d7y" userLabel="视图和图片间距"/>
+                    <constraint firstAttribute="bottom" secondItem="KI0-fL-fie" secondAttribute="bottom" constant="8" id="jCd-PQ-4co" userLabel="文字下间距"/>
+                    <constraint firstItem="KI0-fL-fie" firstAttribute="leading" secondItem="3Gh-9f-Gbj" secondAttribute="trailing" constant="8" id="kjm-Rq-5fW" userLabel="文字和描述头像的间距"/>
+                    <constraint firstItem="yWy-CO-0Do" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="l5b-9t-DpW"/>
+                    <constraint firstAttribute="bottom" secondItem="Kxh-eb-cbu" secondAttribute="bottom" constant="70" id="zLy-bI-hzs" userLabel="图片和cell下间距"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="appListView" destination="UPT-iv-t2H" id="84t-g8-UJ0"/>
+                <outlet property="descTextView" destination="KI0-fL-fie" id="Haf-IT-gr4"/>
+                <outlet property="iconImageView" destination="3Gh-9f-Gbj" id="nqf-ho-if1"/>
+                <outlet property="nameLabel" destination="GN2-ou-84J" id="jP7-vP-z5X"/>
+                <outlet property="pictureImageView" destination="Kxh-eb-cbu" id="6xf-4n-TaI"/>
+            </connections>
+            <point key="canvasLocation" x="307.5" y="198"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="topic_Cell_Bg.png" width="310" height="308"/>
+    </resources>
+</document>

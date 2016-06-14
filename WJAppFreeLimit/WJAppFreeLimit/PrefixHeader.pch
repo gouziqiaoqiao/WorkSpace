@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  WJAppFreeLimit
+//
+//  Created by 千锋 on 16/6/13.
+//  Copyright (c) 2016年 wangjun. All rights reserved.
+//
+
+#ifndef WJAppFreeLimit_PrefixHeader_pch
+#define WJAppFreeLimit_PrefixHeader_pch
+
+// 这里导入一些常用的类文件
+#import "UIColor+WJColor.h"
+#import "Define.h"
+//#import "CategoryModel.h"
+
+
+// 使用cocopods导入的第三方库,使用的时候需要用`<>`导入
+
+#pragma mark - 导入三方库
+
+#import <YYModel.h>
+
+#import <Masonry.h>
+
+#import <AFNetworking.h>
+
+#import <MJRefresh.h>
+
+#import <UIImageView+AFNetworking.h>
+#endif
